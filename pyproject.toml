@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "detector-truth-gap"
+version = "0.1.0"
+description = "Auditing trace-level behavioral detectors in LLM-agent evaluation: what the trace shows vs what the label says"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+dependencies = ["numpy", "pandas", "pyarrow"]
+
+[project.urls]
+Repository = "https://github.com/habib-analyst/detector-truth-gap"
+
+[tool.setuptools.packages.find]
+where = ["src"]
